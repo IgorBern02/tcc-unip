@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Upload</title>
+    <link href="../../css/output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../../css/styles.css" />
+  </head>
+  <body
+    class="bg-white w-full h-screen flex flex-col items-center px-4 py-6 gap-5"
+  >
+    <section class="w-full rounded-xl bg-slate-100 p-3 gap-5 flex flex-col">
+      <label
+        for="escolher_arquivo"
+        class="bg-slate-200 px-2 py-9 flex items-center justify-center rounded-xl"
+      >
+        <img
+          src="../../../images/folder.png"
+          alt="Inserir Arquivo"
+          class="w-24 h-24"
+        />
+      </label>
+      <input type="file" id="escolher_arquivo" class="hidden" />
+      <button
+        class="w-full p-2 bg-slate-200 text-black text-2xl font-mono italic text-nowrap rounded-xl"
+      >
+        Inserir Arquivo
+      </button>
+    </section>
+
+    <section class="w-full flex flex-col items-center justify-between gap-14">
+      <div class="w-full flex justify-center">
+        <input
+          id="titulo"
+          type="text"
+          placeholder="Título"
+          class="outline-none border-b border-black text-center p-2 w-full text-xl font-mono italic bg-transparent text-black placeholder:text-black"
+        />
+      </div>
+
+      <div class="w-full flex justify-center border-b border-black">
+        <input
+          id="descricao"
+          type="text"
+          placeholder="Descrição"
+          class="outline-none 383838 text-center p-2 w-full text-xl font-mono italic bg-transparent text-black placeholder:text-black"
+        />
+      </div>
+
+      <select
+        name="plataforma"
+        class="outline-none border-b border-black text-center p-2 w-full text-xl font-mono italic bg-transparent text-black"
+      >
+        <option value="" class="text-black bg-slate-100 text-sm p-5">
+          Categoria
+        </option>
+        <option value="jogos" class="text-black bg-slate-100 text-sm p-5">
+          Jogos
+        </option>
+        <option value="vlog" class="text-black bg-slate-100 text-sm p-5">
+          Vlog
+        </option>
+        <option value="filmes" class="text-black bg-slate-100 text-sm p-5">
+          Filmes
+        </option>
+        <option value="series" class="text-black bg-slate-100 text-sm p-5">
+          Séries
+        </option>
+        <option value="musica" class="text-black bg-slate-100 text-sm p-5">
+          Música
+        </option>
+        <option value="viagem" class="text-black bg-slate-100 text-sm p-5">
+          Viagem
+        </option>
+        <option value="cursos" class="text-black bg-slate-100 text-sm p-5">
+          Cursos
+        </option>
+        <option value="entreoutros" class="text-black bg-slate-100 text-sm p-5">
+          Entre Outros
+        </option>
+      </select>
+    </section>
+
+    <button
+      id="confirmar"
+      type="submit"
+      class="text-black w-full text-2xl font-mono italic bg-slate-100 p-1 mt-5"
+    >
+      Confirmar
+    </button>
+
+    <script src="index.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  </body>
+</html>

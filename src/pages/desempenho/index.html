@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desempenho</title>
+    <link rel="stylesheet" href="../../css/output.css" />
+  </head>
+  <body class="w-full h-screen flex flex-col items-center">
+    <section class="w-3/4 mt-5">
+      <select
+        id="periodSelect"
+        name="plataforma"
+        class="outline-none border-b border-black text-center p-2 w-full text-xl font-mono italic bg-transparent text-black"
+      >
+        <option value="Periodo" class="text-black bg-slate-100 text-sm p-5">
+          Período
+        </option>
+        <option value="7Dias" class="text-black bg-slate-100 text-sm p-5">
+          7 Dias
+        </option>
+        <option value="30Dias" class="text-black bg-slate-100 text-sm p-5">
+          30 Dias
+        </option>
+        <option value="6Meses" class="text-black bg-slate-100 text-sm p-5">
+          6 Meses
+        </option>
+        <option value="1Ano" class="text-black bg-slate-100 text-sm p-5">
+          1 Ano
+        </option>
+      </select>
+    </section>
+    <section
+      id="contentSection"
+      class="bg-slate-100 w-3/4 p-2 rounded-xl mt-52"
+    >
+      <div class="w-full p-2">
+        <p id="periodTitle" class="font-mono italic text-2xl text-center">
+          7 Dias
+        </p>
+      </div>
+      <div class="mt-2">
+        <ul class="">
+          <li class="text-lg font-mono italic">
+            Curtidas:<span id="likes" class="ml-3">440</span>
+          </li>
+          <li class="text-lg font-mono italic mt-2">
+            Visualizações:<span id="views" class="ml-3">5200</span>
+          </li>
+          <li class="text-lg font-mono italic mt-2">
+            Seguidores:<span id="followers" class="ml-3">670</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <a
+      href="../telaInicial/index.html"
+      class="w-full bg-slate-200 p-2 text-lg font-mono italic fixed bottom-0 flex items-center justify-center"
+    >
+      <button>Confirmar</button>
+    </a>
+    <script src="index.js"></script>
+  </body>
+</html>

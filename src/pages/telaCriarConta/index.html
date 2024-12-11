@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Criar Conta</title>
+    <link rel="stylesheet" href="../../css/output.css" />
+  </head>
+  <body class="w-full h-screen flex flex-col items-center justify-center p-3">
+    <form
+      id="loginForm"
+      class="w-full h-auto bg-slate-100 flex flex-col p-2 gap-5 justify-around rounded-xl"
+    >
+      <div class="bg-slate-200 p-3 flex flex-col rounded-xl">
+        <label for="email" class="text-2xl font-mono italic">Usuário</label>
+        <input
+          id="email"
+          type="text"
+          class="bg-transparent border-black border-b outline-none font-mono text-xl"
+          value="@"
+        />
+      </div>
+
+      <div class="bg-slate-200 p-3 flex flex-col rounded-xl">
+        <label for="email" class="text-2xl font-mono italic">Email</label>
+        <input
+          id="email"
+          type="email"
+          class="bg-transparent border-black border-b outline-none font-mono text-xl"
+        />
+      </div>
+
+      <div class="bg-slate-200 p-3 flex flex-col rounded-xl relative">
+        <label for="senha" class="text-2xl font-mono italic">Senha</label>
+        <input
+          id="senha"
+          type="password"
+          class="bg-transparent border-black border-b outline-none font-mono text-xl"
+        />
+        <img
+          src="../../../images/view.png"
+          alt=""
+          class="absolute w-10 h-10 right-2 bottom-4"
+          id="mostrarSenha"
+        />
+      </div>
+
+      <div class="bg-slate-200 p-3 flex flex-col rounded-xl relative">
+        <label for="senha" class="text-2xl font-mono italic"
+          >Confirmar Senha</label
+        >
+        <input
+          id="confirmarSenha"
+          type="password"
+          class="bg-transparent border-black border-b outline-none font-mono text-xl"
+        />
+        <img
+          src="../../../images/view.png"
+          alt=""
+          class="absolute w-10 h-10 right-2 bottom-4"
+          id="mostrarConfirmarSenha"
+        />
+      </div>
+
+      <p id="error-message" class="hidden text-center text-lg text-red-600">
+        Senhas Incorretas
+      </p>
+
+      <button
+        type="submit"
+        class="w-full p-2 bg-slate-200 rounded-xl flex items-center justify-center"
+      >
+        <span class="text-2xl font-mono italic w-full h-full">Criar Conta</span>
+      </button>
+
+      <script>
+        const mostrarSenha = document.getElementById("mostrarSenha");
+        const mostrarConfirmarSenha = document.getElementById(
+          "mostrarConfirmarSenha"
+        );
+        const confirmarSenha = document.getElementById("confirmarSenha");
+        const senha = document.getElementById("senha");
+        const emailInput = document.getElementById("email");
+        const senhaInput = document.getElementById("senha");
+        const errorMessage = document.getElementById("error-message");
+
+        mostrarSenha.addEventListener("click", () => {
+          if (senha.type === "password") {
+            senha.type = "text";
+            mostrarSenha.src = "../../../images/hide.png";
+          } else {
+            senha.type = "password";
+
+            mostrarSenha.src = "../../../images/view.png";
+          }
+        });
+
+        mostrarConfirmarSenha.addEventListener("click", () => {
+          if (confirmarSenha.type === "password") {
+            confirmarSenha.type = "text";
+            mostrarConfirmarSenha.src = "../../../images/hide.png";
+          } else {
+            confirmarSenha.type = "password";
+            mostrarConfirmarSenha.src = "../../../images/view.png";
+          }
+        });
+
+        const loginForm = document.getElementById("loginForm");
+        loginForm.addEventListener("submit", (e) => {
+          e.preventDefault();
+          const password = senha.value;
+          const confirmPassword = confirmarSenha.value;
+
+          if (password !== confirmPassword) {
+            errorMessage.classList.remove("hidden");
+          } else {
+            window.location.href = "../../index.html";
+          }
+        });
+      </script>
+    </form>
+  </body>
+</html>

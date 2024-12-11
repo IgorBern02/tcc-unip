@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pagina Inicial</title>
+    <link rel="stylesheet" href="../../src/css/output.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="w-full h-screen">
+    <header class="w-full h-16">
+      <ul class="nav h-full flex items-center justify-center">
+        <li class="active w-full h-full flex items-center justify-center">
+          <input
+            type="button"
+            value="Navegação"
+            class="text-xl font-sans italic w-full h-full"
+            data-tab="tab1"
+          />
+        </li>
+        <li class="p-2 w-full h-full flex items-center justify-center">
+          <input
+            type="button"
+            value="Chat"
+            class="text-xl font-sans italic w-full h-full"
+            data-tab="tab2"
+          />
+        </li>
+        <li class="p-2 w-full h-full flex items-center justify-center">
+          <input
+            type="button"
+            value="Conta"
+            class="text-xl font-sans italic w-full h-full"
+            data-tab="tab3"
+          />
+        </li>
+      </ul>
+    </header>
+
+    <div class="tab-content">
+      <!-- Navegação -->
+      <div id="tab1" class="tab active">
+        <section class="w-full h-screen">
+          <div class="w-full h-10 flex items-center justify-between mt-5">
+            <img src="../../images/search.png" alt="" class="w-6 h-6 ml-5" />
+            <input
+              type="text"
+              class="w-full h-10 px-2 text-lg outline-none"
+              placeholder="Pesquisar..."
+            />
+          </div>
+
+          <div
+            class="w-full h-auto p-2 flex flex-col items-center bg-slate-100 gap-3"
+          >
+            <h1 class="font-mono italic text-2xl">A Pé por NYC</h1>
+            <p class="text-lg w-full text-left italic font-mono">
+              Visualições: 78.463
+            </p>
+            <div class="w-full h-3/4 rounded-xl overflow-hidden relative">
+              <img
+                class="w-full h-full opacity-70"
+                src="https://picsum.photos/300/150/?image=520"
+              />
+              <img
+                src="../../images/play.png"
+                alt=""
+                class="w-20 h-20 absolute top-[60px] left-[150px] opacity-40"
+              />
+            </div>
+            <div class="w-full h-auto">
+              <p class="text-xl italic font-mono ml-3">
+                Caminhando por Manhattan: Um Dia Típico em Nova York
+              </p>
+            </div>
+            <div
+              class="w-full flex items-center justify-around h-auto p-2 gap-3"
+            >
+              <div
+                class="bg-slate-200 p-2 rounded-full flex items-center justify-around w-full"
+              >
+                <img
+                  src="../../images/like.png"
+                  alt="likes"
+                  class="w-10 h-10"
+                />
+                <img
+                  src="../../images/dislike.png"
+                  alt="likes"
+                  class="w-10 h-10"
+                />
+              </div>
+            </div>
+            <div class="w-full h-auto p-2 flex items-center gap-5">
+              <input
+                class="p-2 rounded-xl w-4/5 text-xl"
+                type="text"
+                class="w-5/6 border border-black"
+                placeholder="Digite seu comentário..."
+              />
+              <img src="../../images/send.png" alt="" class="w-7 h-7" />
+            </div>
+          </div>
+
+          <div
+            class="w-full h-auto p-2 gap-3 flex flex-col items-center bg-slate-100 mt-5"
+          >
+            <h1 class="font-mono italic text-2xl">Na pegada do skate</h1>
+            <p class="text-lg w-full text-left italic font-mono">
+              Visualições: 43.201
+            </p>
+            <div class="w-full h-3/4 rounded-xl overflow-hidden relative">
+              <img
+                class="w-full h-full opacity-70"
+                src="https://picsum.photos/300/150/?image=904"
+              />
+              <img
+                src="../../images/play.png"
+                alt=""
+                class="w-20 h-20 absolute top-[60px] left-[150px] opacity-40"
+              />
+            </div>
+            <div class="w-full h-auto">
+              <p class="text-xl italic font-mono ml-3">
+                Um dia no skatepark: Diversão e adrenalina
+              </p>
+            </div>
+            <div
+              class="w-full flex items-center justify-around h-auto p-2 gap-3"
+            >
+              <div
+                class="bg-slate-200 p-2 rounded-full flex items-center justify-around w-full"
+              >
+                <img
+                  src="../../images/like.png"
+                  alt="likes"
+                  class="w-10 h-10"
+                />
+                <img
+                  src="../../images/dislike.png"
+                  alt="likes"
+                  class="w-10 h-10"
+                />
+              </div>
+            </div>
+            <div class="w-full h-auto p-2 flex items-center gap-5">
+              <input
+                class="p-2 rounded-xl w-4/5 text-xl"
+                type="text"
+                class="w-5/6 border border-black"
+                placeholder="Digite seu comentário..."
+              />
+              <img src="../../images/send.png" alt="" class="w-7 h-7" />
+            </div>
+          </div>
+
+          <div
+            class="w-full h-auto p-2 gap-3 flex flex-col items-center bg-slate-100 mt-5"
+          >
+            <h1 class="font-mono italic text-2xl">Paisagens Aquáticas</h1>
+            <p class="text-lg w-full text-left italic font-mono">
+              Visualições: 12.342
+            </p>
+            <div class="w-full h-3/4 rounded-xl overflow-hidden relative">
+              <img
+                class="w-full h-full opacity-70"
+                src="https://picsum.photos/300/150/?image=787"
+              />
+              <img
+                src="../../images/play.png"
+                alt=""
+                class="w-20 h-20 absolute top-[60px] left-[150px] opacity-40"
+              />
+            </div>
+            <div class="w-full h-auto">
+              <p class="text-xl italic font-mono ml-3">
+                Paisagens Aquáticas: Um Banho de Beleza Natural
+              </p>
+            </div>
+            <div
+              class="w-full flex items-center justify-around h-auto p-2 gap-3"
+            >
+              <div
+                class="bg-slate-200 p-2 rounded-full flex items-center justify-around w-full"
+              >
+                <img
+                  src="../../images/like.png"
+                  alt="likes"
+                  class="w-10 h-10"
+                />
+                <img
+                  src="../../images/dislike.png"
+                  alt="likes"
+                  class="w-10 h-10"
+                />
+              </div>
+            </div>
+            <div class="w-full h-auto p-2 flex items-center gap-5">
+              <input
+                class="p-2 rounded-xl w-4/5 text-xl"
+                type="text"
+                class="w-5/6 border border-black"
+                placeholder="Digite seu comentário..."
+              />
+              <img src="../../images/send.png" alt="" class="w-7 h-7" />
+            </div>
+          </div>
+
+          <div
+            class="w-full h-auto p-2 gap-3 flex flex-col items-center bg-slate-100 mt-5"
+          >
+            <h1 class="font-mono italic text-2xl">Belezas Naturais</h1>
+            <p class="text-lg w-full text-left italic font-mono">
+              Visualições: 99.105
+            </p>
+            <div class="w-full h-3/4 rounded-xl overflow-hidden relative">
+              <img
+                class="w-full h-full opacity-70"
+                src="https://picsum.photos/300/150/?image=506"
+              />
+              <img
+                src="../../images/play.png"
+                alt=""
+                class="w-20 h-20 absolute top-[60px] left-[150px] opacity-40"
+              />
+            </div>
+            <div class="w-full h-auto">
+              <p class="text-xl italic font-mono ml-3">
+                A Magia das Cataratas: Uma Jornada Visual
+              </p>
+            </div>
+            <div
+              class="w-full flex items-center justify-around h-auto p-2 gap-3"
+            >
+              <div
+                class="bg-slate-200 p-2 rounded-full flex items-center justify-around w-full"
+              >
+                <img
+                  src="../../images/like.png"
+                  alt="likes"
+                  class="w-10 h-10"
+                />
+                <img
+                  src="../../images/dislike.png"
+                  alt="likes"
+                  class="w-10 h-10"
+                />
+              </div>
+            </div>
+            <div class="w-full h-auto p-2 flex items-center gap-5">
+              <input
+                class="p-2 rounded-xl w-4/5 text-xl"
+                type="text"
+                class="w-5/6 border border-black"
+                placeholder="Digite seu comentário..."
+              />
+              <img src="../../images/send.png" alt="" class="w-7 h-7" />
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- Chats -->
+      <div id="tab2" class="tab">
+        <section class="w-full h-screen">
+          <div class="w-full p-4" id="servidoresh1">
+            <h1 class="text-2xl italic font-mono">Servidores</h1>
+          </div>
+
+          <div id="servidores" class="w-full p-2">
+            <ul class="flex flex-col gap-4">
+              <li class="py-1 px-3 w-full flex items-center justify-between">
+                <p class="text-lg italic font-mono">Brasil 1</p>
+
+                <button
+                  class="p-1 rounded-xl italic font-mono text-lg text-white bg-green-700"
+                >
+                  <a href="../servidores/servidor1.html">Entrar</a>
+                </button>
+              </li>
+
+              <li class="py-1 px-3 w-full flex items-center justify-between">
+                <p class="text-lg italic font-mono">Brasil 2</p>
+
+                <button
+                  class="p-1 rounded-xl italic font-mono text-lg text-white bg-green-700"
+                >
+                  <a href="../servidores/servidor2.html">Entrar</a>
+                </button>
+              </li>
+
+              <li class="py-1 px-3 w-full flex items-center justify-between">
+                <p class="text-lg italic font-mono">Brasil 3</p>
+                <button
+                  class="p-1 rounded-xl italic font-mono text-lg text-white bg-green-700"
+                >
+                  <a href="../servidores/servidor3.html">Entrar</a>
+                </button>
+              </li>
+            </ul>
+          </div>
+
+          <div id="contentDiv"></div>
+        </section>
+      </div>
+
+      <!-- Conta -->
+      <div id="tab3" class="tab">
+        <section class="w-full h-full flex flex-col items-center p-2">
+          <section
+            class="w-3/4 p-2 flex flex-col items-center bg-slate-100 rounded-xl"
+          >
+            <div class="after w-36 h-36 p-2 rounded-full relative">
+              <img
+                class="bg-cover w-full h-full rounded-full bg-[url('https://randomuser.me/api/portraits/men/10.jpg')]"
+              />
+            </div>
+            <div class="w-full text-center font-mono italic text-xl mt-4">
+              <p>@Shadows</p>
+            </div>
+            <button
+              id="buttonEdit"
+              class="border mt-5 p-2 rounded-lg bg-slate-200 text-base italic font-mono"
+            >
+              Editar Nome
+            </button>
+          </section>
+
+          <section class="w-3/4 h-auto p-4 bg-slate-100 rounded-xl mt-5">
+            <ul>
+              <li class="text-xl font-mono italic mt-2">
+                Seguindo:<span id="seguindo" class="ml-2">989</span>
+              </li>
+              <li class="text-xl font-mono italic mt-2">
+                Amigos:<span id="amigos" class="ml-2">74</span>
+              </li>
+            </ul>
+          </section>
+        </section>
+        <a
+          href="../../index.html"
+          class="w-full bg-slate-200 p-2 text-lg font-mono italic fixed bottom-0 flex items-center justify-center"
+        >
+          <button>Sair da Conta</button>
+        </a>
+      </div>
+    </div>
+    <script src="index.js"></script>
+    <script src="../../src/pages/user/index.js"></script>
+  </body>
+</html>
